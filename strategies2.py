@@ -1,7 +1,7 @@
 import numpy as np
 
 def dans_source(x, y, source_x, source_y, a, b):
-    return (source_x <= x < source_x + a) and (source_y <= y < source_y + b)
+    return (source_x <= x <= source_x + a) and (source_y <= y <= source_y + b)
 
 def strategy_simple(concentration, source_x, source_y, a, b,
                     start_x, start_y, d=4, max_tot_iter=3000):
